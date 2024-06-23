@@ -37,3 +37,109 @@ body,
   --txt-shadow-primary: 1px 1px 0 var(--clr-primary), -1px 1px 0 var(--clr-primary),
     -1px -1px 0 var(--clr-primary), 1px -1px 0 var(--clr-primary);
 }
+
+@keyframes load {
+  from {
+    border: none;
+    background: var(--clr-primary);
+    color: var(--clr-contrast);
+  }
+  to {
+    border: 1px solid var(--clr-primary);
+    background: var(--clr-contrast);
+    color: var(--clr-primary);
+  }
+}
+
+.App {
+  background: var(--clr-contrast);
+}
+
+/* Landing Page */
+
+#landing__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.text__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main__title {
+  font-family: var(--ff-heading);
+  font-size: 4rem;
+  color: var(--clr-primary);
+}
+
+.main__title-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#end__title {
+  font-family: var(--ff-heading);
+  font-size: 4rem;
+  color: var(--clr-secondary);
+}
+
+.main__text-container {
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+  color: var(--clr-secondary);
+}
+
+/* Button Styling */
+
+#button {
+  background: var(--clr-primary);
+  border: none;
+  height: 50px;
+  min-width: 175px;
+  width: 30%;
+  max-width: 200px;
+  font-family: var(--ff-heading);
+  font-size: 1.5rem;
+}
+
+#button:hover {
+  cursor: pointer;
+  animation: load;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 480px) {
+  #main__title {
+    font-family: var(--ff-heading);
+    font-size: 3.5rem;
+    color: var(--clr-primary);
+  }
+
+  #end__title {
+    font-family: var(--ff-heading);
+    font-size: 3.5rem;
+    color: var(--clr-secondary);
+  }
+
+  #button {
+    background: var(--clr-primary);
+    border: none;
+    height: 45px;
+    min-width: 175px;
+    width: 25%;
+    max-width: 200px;
+    font-family: var(--ff-heading);
+    font-size: 1.5rem;
+  }
+}
