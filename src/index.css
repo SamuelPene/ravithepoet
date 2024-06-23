@@ -1,1 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap");
+
+:root {
+  font-size: 16px;
+
+  /* Colour Variables */
+  --clr-primary: hsl(13, 88%, 55%);
+  --clr-secondary: hsl(0, 0%, 100%);
+  --clr-contrast: hsl(0, 8%, 10%);
+
+  /* Font faces */
+  --ff-heading: "Barlow Condensed", sans-serif;
+  --ff-sub-heading: "";
+  --ff-paragraph: "";
+  --ff-link: "";
+  --ff-btn: "";
+
+  /* Text Shadow */
+  --txt-shadow-neutral: 1px 1px 0 var(--clr-neutral), -1px 1px 0 var(--clr-neutral),
+    -1px -1px 0 var(--clr-neutral), 1px -1px 0 var(--clr-neutral);
+  --txt-shadow-contrast: 1px 1px 0 var(--clr-contrast), -1px 1px 0 var(--clr-contrast),
+    -1px -1px 0 var(--clr-contrast), 1px -1px 0 var(--clr-contrast);
+  --txt-shadow-primary: 1px 1px 0 var(--clr-primary), -1px 1px 0 var(--clr-primary),
+    -1px -1px 0 var(--clr-primary), 1px -1px 0 var(--clr-primary);
+}
