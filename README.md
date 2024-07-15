@@ -12,7 +12,7 @@ This site is deployed on Netlify - ravithepoetstaging.netlify.app
 
 ## User Interface
 
-![Landing Page](src\Assets\RTPHomePage.jpg "Landing Page")
+![Landing Page](https://github.com/SamuelPene/ravithepoet/src/Assets/RTPHomePage.jpg "Landing Page")
 
 ## Tech Stack
 
