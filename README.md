@@ -2,7 +2,7 @@
 
 > This is a Temporary Landing Page for Ravi The Poet
 
-This site is deployed on Netlify - [Ravi The Poet](ravithepoetstaging.netlify.app)
+This site is deployed on Netlify - ravithepoetstaging.netlify.app
 
 ## User Stories
 
@@ -12,7 +12,7 @@ This site is deployed on Netlify - [Ravi The Poet](ravithepoetstaging.netlify.ap
 
 ## User Interface
 
-![Landing Page](\Assets\RTPHomePage.jpg "Landing Page")
+![Landing Page](src\Assets\RTPHomePage.jpg "Landing Page")
 
 ## Tech Stack
 
