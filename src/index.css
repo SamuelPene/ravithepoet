@@ -23,19 +23,7 @@ body,
   --clr-contrast: hsl(0, 8%, 10%);
 
   /* Font faces */
-  --ff-heading: "Barlow Condensed", sans-serif;
-  --ff-sub-heading: "";
-  --ff-paragraph: "";
-  --ff-link: "";
-  --ff-btn: "";
-
-  /* Text Shadow */
-  --txt-shadow-neutral: 1px 1px 0 var(--clr-neutral), -1px 1px 0 var(--clr-neutral),
-    -1px -1px 0 var(--clr-neutral), 1px -1px 0 var(--clr-neutral);
-  --txt-shadow-contrast: 1px 1px 0 var(--clr-contrast), -1px 1px 0 var(--clr-contrast),
-    -1px -1px 0 var(--clr-contrast), 1px -1px 0 var(--clr-contrast);
-  --txt-shadow-primary: 1px 1px 0 var(--clr-primary), -1px 1px 0 var(--clr-primary),
-    -1px -1px 0 var(--clr-primary), 1px -1px 0 var(--clr-primary);
+  --ff-text: "Barlow Condensed", sans-serif;
 }
 
 @keyframes load {
@@ -48,16 +36,6 @@ body,
     border: 1px solid var(--clr-primary);
     background: var(--clr-contrast);
     color: var(--clr-primary);
-  }
-}
-
-@keyframes slide-top {
-  from {
-    margin-top: -500px;
-  }
-
-  to {
-    margin-top: 0%;
   }
 }
 
@@ -77,52 +55,70 @@ body,
   gap: 10%;
 }
 
-.text__container {
+#landing__content-container {
+  height: 300px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+#text__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: absolute;
+  top: 0;
 }
 
 #main__title {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-text);
   font-size: 4rem;
   color: var(--clr-primary);
   animation: slide-top 2s;
 }
 
-.main__title-container {
+#main__title-container {
   display: flex;
   flex-direction: row;
 }
 
 #end__title {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-text);
   font-size: 4rem;
   color: var(--clr-secondary);
-  animation: slide-top 2s;
 }
 
-.main__text-container {
-  font-family: var(--ff-heading);
+#main__text-container {
+  font-family: var(--ff-text);
   font-size: 1.5rem;
   color: var(--clr-secondary);
 }
 
 /* Button Styling */
 
-#button {
+#contact {
   background: var(--clr-primary);
   border: none;
   height: 50px;
   min-width: 175px;
   width: 30%;
   max-width: 200px;
-  font-family: var(--ff-heading);
+  font-family: var(--ff-text);
   font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-contrast);
+  position: absolute;
+  bottom: 25%;
 }
 
-#button:hover {
+#contact:hover {
   cursor: pointer;
   animation: load;
   animation-duration: 1s;
@@ -132,26 +128,13 @@ body,
 /* Responsive Mobile */
 
 @media (max-width: 480px) {
-  #main__title {
-    font-family: var(--ff-heading);
-    font-size: 3.5rem;
-    color: var(--clr-primary);
-  }
-
+  #main__title,
   #end__title {
-    font-family: var(--ff-heading);
     font-size: 3.5rem;
-    color: var(--clr-secondary);
   }
 
-  #button {
-    background: var(--clr-primary);
-    border: none;
+  #contact {
     height: 45px;
-    min-width: 175px;
     width: 25%;
-    max-width: 200px;
-    font-family: var(--ff-heading);
-    font-size: 1.5rem;
   }
 }

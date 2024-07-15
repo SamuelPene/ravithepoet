@@ -1,7 +1,11 @@
 import React from "react";
 
 function Button() {
-  return <button id='button'>CONTACT ME</button>;
+  return (
+    <a id='contact' href='mailto:samuel.pene@outlook.com'>
+      CONTACT ME
+    </a>
+  );
 }
 
 export default Button;
